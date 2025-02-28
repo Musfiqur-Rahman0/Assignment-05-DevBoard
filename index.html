@@ -17,7 +17,7 @@
       -->
 </head>
 
-<body class="grid grid-col-4 grid-rows-8 gap-4 h-screen w-screen p-3 bg-[#F4F7FF]">
+<body class="grid grid-col-4 grid-rows-8 gap-4 h-screen w-screen p-5 bg-[#F4F7FF]">
     <!-- navbar desing completed -->
     <section class="nav bg-white  col-span-4  px-5 rounded-lg flex justify-between items-center">
         <div class="flex items-center gap-2">
@@ -27,7 +27,7 @@
         <div class="flex items-center gap-5">
             <div class="flex items-center px-4 py-2 rounded-full gap-2 cursor-pointer bg-gray-100">
                 <img src="assets/checkbox.png" alt="">
-                <h2 class="font-bold text-2xl">23</h2>
+                <h2 id="completedTaskCount" class="font-bold text-2xl">23</h2>
             </div>
             <div class="p-2 bg-gray-100 rounded-full">
                 <img src="assets/theme-btn.png" alt="" width="35" height="35">
@@ -36,13 +36,13 @@
     </section>
 
     <!-- conmpleted main section with grid and flex  -->
-    <section class="main p-4 bg-white row-span-7 col-span-3 rounded-lg space-y-5">
+    <section class="main py-4 bg-white row-span-7 col-span-3 rounded-lg space-y-5">
         <div class="w-full grid grid-cols-4 gap-4">
             <div class="px-5  py-3 flex items-center justify-center gap-5 bg-[#F4F7FF] rounded-lg">
                 <img src="assets/checkbox.png" alt="" height="30" width="30">
                 <div>
                     <p class="text-sm tracking-tighter text-gray-600">Task Assigned </p>
-                    <h2 class="text-2xl font-bold tracking-tight">05</h2>
+                    <h2 id="cart-count" class="text-2xl font-bold tracking-tight">06</h2>
                 </div>
             </div>
             <div
@@ -69,7 +69,7 @@
                         <p class="text-[#00303C]">Deadline</p>
                         <p class="text-lg font-semibold text-[#00303C]">21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary font-semibold">
+                    <button id="completedBtn" class="btn btn-primary font-semibold">
                         Completed
                     </button>
                 </div>
@@ -78,7 +78,7 @@
             <div class="bg-[#F4F7FF] rounded-lg px-4 py-3 space-y-4">
                 <div class="space-y-3">
                     <button class="bg-white px-4 py-2 rounded-lg font-semibold">ShopEase</button>
-                    <h2 class="text-2xl font-bold tracking-tight text-[#00303C]">Fix Mobile Button Issue </h2>
+                    <h2 class="text-2xl font-bold tracking-tight text-[#00303C]">Improve Job searching </h2>
                     <div class="bg-white p-3 rounded-lg">Debug using Chrome DevTools, check for overlapping...</div>
                 </div>
                 <div class="flex items-center justify-between">
@@ -86,7 +86,7 @@
                         <p class="text-[#00303C]">Deadline</p>
                         <p class="text-lg font-semibold text-[#00303C]">21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary font-semibold">
+                    <button id="completedBtn" class="btn btn-primary font-semibold">
                         Completed
                     </button>
                 </div>
@@ -95,7 +95,7 @@
             <div class="bg-[#F4F7FF] rounded-lg px-4 py-3 space-y-4">
                 <div class="space-y-3">
                     <button class="bg-white px-4 py-2 rounded-lg font-semibold">ShopEase</button>
-                    <h2 class="text-2xl font-bold tracking-tight text-[#00303C]">Fix Mobile Button Issue </h2>
+                    <h2 class="text-2xl font-bold tracking-tight text-[#00303C]">Optimize Home page </h2>
                     <div class="bg-white p-3 rounded-lg">Debug using Chrome DevTools, check for overlapping...</div>
                 </div>
                 <div class="flex items-center justify-between">
@@ -103,7 +103,7 @@
                         <p class="text-[#00303C]">Deadline</p>
                         <p class="text-lg font-semibold text-[#00303C]">21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary font-semibold">
+                    <button id="completedBtn" class="btn btn-primary font-semibold">
                         Completed
                     </button>
                 </div>
@@ -112,7 +112,7 @@
             <div class="bg-[#F4F7FF] rounded-lg px-4 py-3 space-y-4">
                 <div class="space-y-3">
                     <button class="bg-white px-4 py-2 rounded-lg font-semibold">ShopEase</button>
-                    <h2 class="text-2xl font-bold tracking-tight text-[#00303C]">Fix Mobile Button Issue </h2>
+                    <h2 class="text-2xl font-bold tracking-tight text-[#00303C]">Add new emoji 🤲</h2>
                     <div class="bg-white p-3 rounded-lg">Debug using Chrome DevTools, check for overlapping...</div>
                 </div>
                 <div class="flex items-center justify-between">
@@ -120,7 +120,7 @@
                         <p class="text-[#00303C]">Deadline</p>
                         <p class="text-lg font-semibold text-[#00303C]">21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary font-semibold">
+                    <button id="completedBtn" class="btn btn-primary font-semibold">
                         Completed
                     </button>
                 </div>
@@ -129,7 +129,7 @@
             <div class="bg-[#F4F7FF] rounded-lg px-4 py-3 space-y-4">
                 <div class="space-y-3">
                     <button class="bg-white px-4 py-2 rounded-lg font-semibold">ShopEase</button>
-                    <h2 class="text-2xl font-bold tracking-tight text-[#00303C]">Fix Mobile Button Issue </h2>
+                    <h2 class="text-2xl font-bold tracking-tight text-[#00303C]">Integrate OpenAI API </h2>
                     <div class="bg-white p-3 rounded-lg">Debug using Chrome DevTools, check for overlapping...</div>
                 </div>
                 <div class="flex items-center justify-between">
@@ -137,7 +137,7 @@
                         <p class="text-[#00303C]">Deadline</p>
                         <p class="text-lg font-semibold text-[#00303C]">21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary font-semibold">
+                    <button id="completedBtn" class="btn btn-primary font-semibold">
                         Completed
                     </button>
                 </div>
@@ -146,7 +146,7 @@
             <div class="bg-[#F4F7FF] rounded-lg px-4 py-3 space-y-4">
                 <div class="space-y-3">
                     <button class="bg-white px-4 py-2 rounded-lg font-semibold">ShopEase</button>
-                    <h2 class="text-2xl font-bold tracking-tight text-[#00303C]">Fix Mobile Button Issue </h2>
+                    <h2 class="text-2xl font-bold tracking-tight text-[#00303C]">Add Dark Mode </h2>
                     <div class="bg-white p-3 rounded-lg">Debug using Chrome DevTools, check for overlapping...</div>
                 </div>
                 <div class="flex items-center justify-between">
@@ -154,7 +154,7 @@
                         <p class="text-[#00303C]">Deadline</p>
                         <p class="text-lg font-semibold text-[#00303C]">21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary font-semibold">
+                    <button id="completedBtn" class="btn btn-primary font-semibold">
                         Completed
                     </button>
                 </div>
@@ -172,12 +172,10 @@
                 <img src="assets/activity.png" alt="" height="25" width="25">
                 <p class="text-xl font-semibold">Activity Log</p>
             </div>
-            <button class="btn btn-primary">Clear History</button>
+            <button id="clear-task" class="btn btn-primary">Clear History</button>
         </div>
-        <div class="px-4 py-5">
-            <div class="bg-gray-100 p-4 rounded-lg">
-                <p class="text-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-            </div>
+        <div id="activity-container" class="px-4 py-5 space-y-5">
+            <!-- massage will dynamically added here  -->
         </div>
     </section>
 
