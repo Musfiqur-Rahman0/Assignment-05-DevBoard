@@ -7,11 +7,16 @@
     <title>DEv-Board by Monster</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 
+    btn color : 3752FD
+    uncomple : 3752FD
+
+      -->
 </head>
 
-<body class="grid grid-col-4 grid-rows-8 gap-4 h-screen w-screen p-3">
+<body class="grid grid-col-4 grid-rows-8 gap-4 h-screen w-screen p-3 bg-[#F4F7FF]">
     <!-- navbar desing completed -->
-    <div class="nav border border-black col-span-4  px-5 rounded-lg flex justify-between items-center">
+    <div class="nav bg-white border border-black col-span-4  px-5 rounded-lg flex justify-between items-center">
         <div class="flex items-center gap-2">
             <img src="assets/logo.png" alt="">
             <h2 class="font-bold text-2xl "><span class="font-light">Dev</span>Board</h2>
@@ -27,8 +32,23 @@
         </div>
     </div>
 
-    <div class="main border border-black row-span-7 col-span-3 rounded-lg"></div>
-    <div class="sidebar border border-black  row-span-7 rounded-lg"></div>
+    <div class="main bg-white border border-black row-span-7 col-span-3 rounded-lg"></div>
+
+    <!-- completed sidebar section but has a issue of width  -->
+    <div class="sidebar bg-white border border-black  row-span-7 rounded-lg flex flex-col items-center ">
+        <div class="text-center flex flex-col items-center  space-y-4 py-5 w-full border border-b-gray-200 ">
+            <div class=" flex items-center gap-3">
+                <img src="assets/activity.png" alt="" height="25" width="25">
+                <p class="text-xl font-semibold">Activity Log</p>
+            </div>
+            <button class="btn btn-primary">Clear History</button>
+        </div>
+        <div class="px-4 py-5">
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <p class="text-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            </div>
+        </div>
+    </div>
 
     <script src="js/utilities.js"></script>
     <script src="js/script.js"></script>
