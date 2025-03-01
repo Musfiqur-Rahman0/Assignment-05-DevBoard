@@ -47,6 +47,16 @@ function getCurrTime() {
   return currentTime;
 }
 
+function getTodayDate() {
+  const today = new Date();
+  const day = today.toLocaleDateString("en-US", { weekday: "short" });
+  const month = today.toLocaleDateString("en-US", { month: "short" });
+  const date = today.getDate();
+  const year = today.getFullYear();
+  return `${day}, ${month} ${date}  ${year}`;
+}
+todayDate.innerText = getTodayDate();
+
 clearBtn.addEventListener("click", function () {
   activityMassagesContainer.innerHTML = "";
 });
