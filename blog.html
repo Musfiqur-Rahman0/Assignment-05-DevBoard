@@ -30,24 +30,66 @@
                     <h2 class="blog-title text-xl font-semibold">Question-1: What are the different ways to select an
                         element in the DOM?</h2>
                     <hr class="my-3">
-                    <p class="text-gray-600 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nisi
-                        dolorem doloremque voluptatibus,
-                        enim itaque totam repudiandae! Impedit sapiente error aliquid inventore eius vel laborum est
-                        debitis tempore odio assumenda, enim, officia nostrum dolor quibusdam? Doloremque dignissimos
-                        fugiat non ullam!</p>
+                    <p class="text-gray-600 text-lg">
+                        <code class="text-blue-500"> &lt;!-- There are a lot of ways to select an html element using JavaScript  in this blog i will talk about some most frequently used method to select a html element using JavaScript. --&gt; 
+                        </code>
+                    <ul class="ml-5 list-disc space-y-3">
+                        <li>document.getElementById('idName') : In this method we just have to pass the id name of the
+                            element what we want to access. Example </li>
+                        <code> const element = document.getElementById('btn') </code>
+
+                        <li>document.getElementByClass('className') : In this method we just have to pass the class name
+                            of
+                            the
+                            element what we want to access. Example </li>
+                        <code> const element = document.getElementByClassName('container') </code>
+
+                        <li>document.getElementsByClassName('className') : In this method we just have to pass the class
+                            name of the
+                            element what we want to access. and this method will return all the element that has the
+                            same class name that just pass here. Example </li>
+                        <code> const element = document.getElementById('box') </code>
+                        This will return all the element that has the box class in a document list.
+                        <li>document.querySelector('id/class/tag name') : In this method we just have to pass the
+                            class/id/tag
+                            name of the
+                            element with the css selector for the id and the class what we want to access. and this
+                            method will return the first element that has the
+                            same class name that just pass here. Example </li>
+                        <code> const element = document.querySelector('box') </code>
+                        This will return the first element that has the box class.
+                        <li>document.querySelectorAll('id/class/tag name') : In this method we just have to pass the
+                            class/id/tag
+                            name with the css selector for id or class of the
+                            element what we want to access . and this method will return the all element that has the
+                            same class name that just pass here in a nodelist. Example </li>
+                        <code> const element = document.querySelector('box') </code>
+                        This will return the first element that has the box class.
+
+
+                    </ul>
+                    </p>
                 </div>
                 <div class="blog bg-white px-4 py-5">
                     <h2 class="blog-title text-xl font-semibold">Question-2: What is the difference between innerHTML,
                         innerText, and textContent ?</h2>
                     <hr class="my-3">
-                    <p class="text-gray-600 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nisi
-                        dolorem doloremque voluptatibus,
-                        enim itaque totam repudiandae! Impedit sapiente error aliquid inventore eius vel laborum est
-                        debitis tempore odio assumenda, enim, officia nostrum dolor quibusdam? Doloremque dignissimos
-                        fugiat non ullam!</p>
+                    <p class="text-gray-600 text-lg">
+                    <ul class="ml-5 list-disc">
+                        <li>innerHTML : <span>
+                                innerHTML return all text inside an element including html tags and comments
+                            </span></li>
+                        <li>innerText : innerText only return all the visible text inside an element including it's
+                            child
+                            element text .But ingnores the hidden text like if you give a element display none and if
+                            you try to access the innerText the output will be empty.</li>
+                        <li>textContent : gets or sets all the text content even the hidden one. but not returns any
+                            html tags </li>
+                    </ul>
+                    </p>
                 </div>
                 <div class="blog bg-white px-4 py-5">
-                    <h2 class="blog-title text-xl font-semibold">Question-5: How do you create, add, and remove elements
+                    <h2 class="blog-title text-xl font-semibold">Question-3: How do you create, add, and remove elements
                         using JavaScript?</h2>
                     <hr class="my-3">
                     <p class="text-gray-600 text-lg">
@@ -97,7 +139,7 @@
                         বাবলিং বলে।!</p>
                 </div>
                 <div class="blog bg-white px-4 py-5">
-                    <h2 class="blog-title text-xl font-semibold">Question-3: What is event delegation in the DOM?</h2>
+                    <h2 class="blog-title text-xl font-semibold">Question-5: What is event delegation in the DOM?</h2>
                     <hr class="my-3">
                     <p class="text-gray-600 text-lg">ইভেন্ট ডেলিগেসন এক ধরনের Pattern। এই প্যাটার্ন ব্যবহার করে আমাদের
                         কোড রেপিটেসিওন কমাতে এবং মেমোরি উপচয় রোধ করতে পাড়ি। যেমন আমরা যদি কোন একটি প্যারেন্ট এলিমেনট এ
