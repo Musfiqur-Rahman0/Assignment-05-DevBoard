@@ -69,5 +69,5 @@ themeColorBtn.addEventListener("click", function () {
 
 blogPageLinkerBtn.addEventListener("click", function () {
   console.log("clicked");
-  window.location.href = "/blog.html";
+  window.location.href = "blog.html";
 });
