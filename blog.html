@@ -50,21 +50,43 @@
                     <h2 class="blog-title text-xl font-semibold">Question-5: How do you create, add, and remove elements
                         using JavaScript?</h2>
                     <hr class="my-3">
-                    <p class="text-gray-600 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nisi
-                        dolorem doloremque voluptatibus,
-                        enim itaque totam repudiandae! Impedit sapiente error aliquid inventore eius vel laborum est
-                        debitis tempore odio assumenda, enim, officia nostrum dolor quibusdam? Doloremque dignissimos
-                        fugiat non ullam!</p>
-                </div>
-                <div class="blog bg-white px-4 py-5">
-                    <h2 class="blog-title text-xl font-semibold">Question-3: What is event delegation in the DOM?</h2>
-                    <hr class="my-3">
-                    <p class="text-gray-600 text-lg">ইভেন্ট ডেলিগেসন এক ধরনের Pattern। এই প্যাটার্ন ব্যবহার করে আমাদের
-                        কোড রেপিটেসিওন কমাতে এবং মেমোরি উপচয় রোধ করতে পাড়ি। যেমন আমরা যদি কোন একটি প্যারেন্ট এলিমেনট এ
-                        ইভেন্ট অ্যাড করি তাহলে এটি তার করেস্পন্সদিং যেই Child element গুলো থাকবে তাতেও ইভেন্ট টি কাজ
-                        করতে পারে অর্থাৎ এটি তার ভিতরে থাকে Child element গুলোকেও টার্গেট করেতে সক্ষম। যেমন ঃ <code>
-                            <h2>hellow world</h2>
-                        </code></p>
+                    <p class="text-gray-600 text-lg">
+                    <ul class="list-disc ml-5">
+                        <li><span class="text-lg font-bold">To Create</span> : </li>
+                        <pre>
+       <code class="text-blue-500">
+        const div = document.createElement("div"); 
+        &lt;!-- this will create a new div --&gt;
+        </code>
+    </pre>
+                        <li class="font-bold text-lg">To Add : </li>
+                        <pre>
+       <code class="text-blue-500">
+        const containerElement  = document.getElementById("container"); 
+        &lt;!-- this will get the container by id from the html file --&gt;
+        containerElement.appendChild(div); 
+        &lt;! this line will add the div that has created by js into the container.
+        </code>
+    </pre>
+                        <li class="text-xl font-bold">To Remove : </li>
+                        <pre>
+                        <code class="text-blue-500">
+    &lt;!-- We can use removeChild() ,  remove() , element.innerHTML = ""  --&gt;
+        <li>removeChild() : This method removes a child element from the parent element
+             container.removeChild(div)  
+             &lt;!-- This will remove the div from the container --&gt;
+        </li>
+        <li>remove() : This method removes a child element from the parent element
+             container.remove()  
+             &lt;!-- This will remove the container itself. --&gt;
+        </li>
+        <li>element.innerHTML = "" : This method removes every  element from the parent element 
+        </li>
+       
+       </code>
+                        </pre>
+                    </ul>
+                    </p>
                 </div>
                 <div class="blog bg-white px-4 py-5">
                     <h2 class="blog-title text-xl font-semibold">Question-4: What is event bubbling in the DOM?</h2>
@@ -74,6 +96,43 @@
                         দিকে উটতে থাকে ততক্ষণ প্রযন্ত যতক্ষণ প্রযন্ত না যে Root Element এ পৌছায়। এই প্রক্রিয়াকে ইভেন্ট
                         বাবলিং বলে।!</p>
                 </div>
+                <div class="blog bg-white px-4 py-5">
+                    <h2 class="blog-title text-xl font-semibold">Question-3: What is event delegation in the DOM?</h2>
+                    <hr class="my-3">
+                    <p class="text-gray-600 text-lg">ইভেন্ট ডেলিগেসন এক ধরনের Pattern। এই প্যাটার্ন ব্যবহার করে আমাদের
+                        কোড রেপিটেসিওন কমাতে এবং মেমোরি উপচয় রোধ করতে পাড়ি। যেমন আমরা যদি কোন একটি প্যারেন্ট এলিমেনট এ
+                        ইভেন্ট অ্যাড করি তাহলে এটি তার করেস্পন্সদিং যেই Child element গুলো থাকবে তাতেও ইভেন্ট টি কাজ
+                        করতে পারে অর্থাৎ এটি তার ভিতরে থাকে Child element গুলোকেও টার্গেট করেতে সক্ষম। যেমন ঃ
+                    <pre>
+                        <code>
+    &lt;ul id="itemList"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;ul&gt;    
+&lt;!--  write this code on the js file or you write down this at the bottom of the html body tag --&gt;
+    &lt;script&gt;
+    const itemList = document.getElementById("itemList")
+    itemList.addEventListener("click", (event) => {
+        console.log(event.target)
+      });
+    &lt;/script&gt;
+                            </code>
+                        </pre>
+                    <h2 class="text-xl font-bold">কী ঘটবে এখানে?</h2>
+                    <ul class="list-disc ml-5 mt-2">
+                        <li> প্রথমে, itemList-এ একটি click ইভেন্ট লিসেনার যুক্ত করা হয়েছে।</li>
+                        <li> যখনই ul-এর যেকোনো li-তে ক্লিক করা হবে, তা ইভেন্ট bubbling এর মাধ্যমে `ul
+                            পর্যন্ত
+                            পৌঁছাবে, এবং এটি console.log() এর দারা ব্রাউজার এ দেখা যাবে।</li>
+                    </ul>
+                    অর্থাৎ এটি ব্যবহার করলে আমাদের প্রত্যেকটি এলিমেনট এর জন্য আলাদা আলাদা event listener যোগ করতে
+                    হচ্ছে
+                    না যা
+                    আমাদের কোডকে অনেক বেশি clean বানায় এবং আমাদের coding এর productivity বাড়ায়।
+                    </p>
+                </div>
+
             </div>
         </section>
     </div>
