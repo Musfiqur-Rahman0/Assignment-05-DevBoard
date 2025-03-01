@@ -1,3 +1,6 @@
+let completedTaskCount = parseInt(completedTask.innerText);
+let taskCount = parseInt(cartCount.innerText);
+
 for (let completedBtn of allCompletedBtn) {
   completedBtn.addEventListener("click", function (e) {
     if (e.target === completedBtn) {
@@ -46,5 +49,15 @@ function getCurrTime() {
 
 clearBtn.addEventListener("click", function () {
   activityMassagesContainer.innerHTML = "";
+});
+
+themeColorBtn.addEventListener("click", function () {
+  const random = Math.floor(Math.random() * 16777215);
+  const convertedToHexColor = "#" + random.toString(16).padStart(6, "0");
+  body.style.backgroundColor = convertedToHexColor;
+});
+
+blogPageLinkerBtn.addEventListener("click", function () {
   console.log("clicked");
+  window.location.href = "/blog.html";
 });
