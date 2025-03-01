@@ -14,27 +14,30 @@
 
 </head>
 
-<body class="w-full  bg-[#F4F7FF]">
-    <div class="w-[90%] mx-auto grid grid-col-12 grid-rows-8 gap-4  p-5 ">
-        <!-- navbar desing completed -->
-        <section class="nav bg-white  col-span-12  px-5  rounded-lg flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <img src="assets/logo.png" alt="">
-                <h2 class="font-bold text-2xl "><span class="font-light">Dev</span>Board</h2>
-            </div>
-            <div class="flex items-center gap-5">
-                <div class="flex items-center px-4 py-2 rounded-full gap-2 cursor-pointer bg-gray-100">
-                    <img src="assets/checkbox.png" alt="">
-                    <h2 id="completedTaskCount" class="font-bold text-2xl">23</h2>
-                </div>
-                <div id="random-theme-color" class="cursor-pointer p-2 bg-gray-100 rounded-full">
-                    <img src="assets/theme-btn.png" alt="" width="35" height="35">
-                </div>
-            </div>
-        </section>
+<body class="w-full  bg-[#F4F7FF] py-3">
+    <!-- <div class="w-[90%] mx-auto grid grid-col-12 grid-rows-8 gap-4  p-5 "> -->
+    <!-- navbar desing completed -->
 
-        <!-- conmpleted main section with grid and flex  -->
-        <section class="main p-4 bg-white row-span-7 col-span-9 rounded-lg space-y-5">
+    <nav class="nav w-[90%] mx-auto bg-white mt-3   px-5 py-3   rounded-lg flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="">
+            <h2 class="font-bold text-2xl "><span class="font-light">Dev</span>Board</h2>
+        </div>
+        <div class="flex items-center gap-5">
+            <div class="flex items-center px-4 py-2 rounded-full gap-2 cursor-pointer bg-gray-100">
+                <img src="assets/checkbox.png" alt="">
+                <h2 id="completedTaskCount" class="font-bold text-2xl">23</h2>
+            </div>
+            <div id="random-theme-color" class="cursor-pointer p-2 bg-gray-100 rounded-full">
+                <img src="assets/theme-btn.png" alt="" width="35" height="35">
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- conmpleted main section with grid and flex  -->
+    <section class="flex  gap-5 w-[90%] mx-auto">
+        <main class="basis-[70%] mt-5 main p-4 bg-white  rounded-lg space-y-5">
             <div class="w-full grid grid-cols-4 gap-4">
                 <div class="px-5  py-3 flex items-center justify-center gap-5 bg-[#F4F7FF] rounded-lg">
                     <img src="assets/checkbox.png" alt="" height="30" width="30">
@@ -160,10 +163,9 @@
                 </div>
             </div>
 
-        </section>
-
-        <!-- completed sidebar section but has a issue of width  -->
-        <section class="sidebar bg-white col-span-3   row-span-7 rounded-lg flex flex-col items-center ">
+        </main>
+        <section
+            class="basis-[30%] mt-5 sidebar bg-white col-span-3   row-span-7 rounded-lg flex flex-col items-center ">
             <div
                 class="text-center flex flex-col items-center  space-y-4 px-5 py-5 w-full border-b border-dashed border-gray-200 ">
                 <div class=" flex items-center gap-3">
@@ -176,10 +178,14 @@
                 <!-- massage will dynamically added here  -->
             </div>
         </section>
+    </section>
 
-        <script src="js/utilities.js"></script>
-        <script src="js/script.js"></script>
-    </div>
+    <!-- completed sidebar section but has a issue of width  -->
+
+
+    <script src="js/utilities.js"></script>
+    <script src="js/script.js"></script>
+    <!-- </div> -->
 </body>
 
 </html>
