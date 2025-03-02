@@ -18,15 +18,16 @@
     <!-- <div class="w-[90%] mx-auto grid grid-col-12 grid-rows-8 gap-4  p-5 "> -->
     <!-- navbar desing completed -->
 
-    <nav class="nav w-[90%] mx-auto bg-white mt-3   px-5 py-3   rounded-lg flex justify-between items-center">
+    <nav
+        class="nav w-[90%] mx-auto bg-white mt-3 px-3 py-2 sm:px-5 sm:py-3   rounded-lg flex justify-between items-center">
         <div class="flex items-center gap-2">
             <img src="assets/logo.png" alt="">
-            <h2 class="font-bold text-2xl "><span class="font-light">Dev</span>Board</h2>
+            <h2 class="font-bold text-lg  sm:text-2xl "><span class="font-light">Dev</span>Board</h2>
         </div>
-        <div class="flex items-center gap-5">
+        <div class="flex items-center gap-2 sm:gap-5">
             <div class="flex items-center px-4 py-2 rounded-full gap-2 cursor-pointer bg-gray-100">
                 <img src="assets/checkbox.png" alt="">
-                <h2 id="completedTaskCount" class="font-bold text-2xl">23</h2>
+                <h2 id="completedTaskCount" class="font-bold text-lg sm:text-2xl">23</h2>
             </div>
             <div id="random-theme-color" class="cursor-pointer p-2 bg-gray-100 rounded-full">
                 <img src="assets/theme-btn.png" alt="" width="35" height="35">
@@ -39,7 +40,8 @@
     <section class="flex flex-col sm:flex-row  gap-5 w-[90%] mx-auto">
         <main class="basis-[70%] mt-5 main p-1 sm:p-4 bg-white  rounded-lg space-y-5">
             <div class="w-full grid grid-cols-4 gap-2  sm:gap-4">
-                <div class="px-5  py-3 flex items-center justify-center gap-1 sm:gap-5 bg-[#F4F7FF] rounded-lg">
+                <div
+                    class="sm:px-5 py-2 sm:py-3 flex flex-col sm:flex-row text-center items-center justify-center gap-1 sm:gap-5 bg-[#F4F7FF] rounded-lg">
                     <img class="h-6 w-6 sm:h-10 sm:w-10" src="assets/checkbox.png" alt="">
                     <div>
                         <p class="text-[0.7rem] sm:text-sm tracking-tighter text-gray-600">Task Assigned </p>
@@ -49,13 +51,14 @@
                 <div
                     class="blog-page-linker col-span-2 rounded-lg bg-gradient-to-r from-[#3752FD]  to-[#9BA8F8] px-3 sm:px-5  sm:py-3 flex items-center gap-1 sm:gap-3">
                     <div>
-                        <img class="h-8 w-8 sm:h-14 sm:w-14" src="assets/board.png" alt="">
+                        <img class="h-8 w-8 sm:h-14 sm:w-14 object-cover" src="assets/board.png" alt="">
                     </div>
                     <p class="text-white text-[0.7rem] sm:text-lg tracking-tight font-semibold">Discover Something New
                         Today!
                     </p>
                 </div>
-                <div class="px-5 py-3  flex items-center justify-center gap-2 sm:gap-5 bg-[#F4F7FF] rounded-lg">
+                <div
+                    class="sm:px-5 sm:py-3  flex flex-col  sm:flex-row items-center justify-center text-center gap-1 sm:gap-5 bg-[#F4F7FF] rounded-lg">
                     <i class="fa-regular fa-calendar text-2xl sm:text-4xl"></i>
                     <p id="date" class="font-semibold text-[0.7rem] sm:text-lg">Wed ,Jul 28 2025 </p>
                 </div>
