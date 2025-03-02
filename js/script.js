@@ -13,21 +13,16 @@ for (let completedBtn of allCompletedBtn) {
       const task =
         completedBtn.parentNode.parentNode.childNodes[1].childNodes[3]
           .innerText;
-      //   console.log(task);
-      //       activityMassagesContainer.innerHTML = `
-      //          <div class="bg-gray-100 p-4 rounded-lg">
-      //
-      // </div>
-      //       `;
+
       const massage = document.createElement("div");
       massage.className = "bg-gray-100 p-4 rounded-lg";
       massage.innerHTML = `
         <p class="text-lg">You have Complete ${task} at ${getCurrTime()}</p>
         `;
       activityMassagesContainer.appendChild(massage);
-      alert("Succesfully completed the task");
+      alert("Board updated Successfully!");
       if (taskCount === 0) {
-        alert("Congrates you have sucesfully completed all the task.");
+        alert("Congrates!! you have succesfully completed all the task.");
       }
     }
   });
